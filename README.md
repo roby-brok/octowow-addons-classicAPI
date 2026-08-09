@@ -84,7 +84,7 @@ are not addons — most of what follows depends on them.
 | OWThreat | 1.4.0 | **[my fork](https://github.com/roby-brok/OWThreat)** — original ([TWThreat](https://github.com/MarcelineVQ/TWThreat)) by Xerron/Er. Speaks the same threat API, so it works alongside stock TWThreat users — but do not install both |
 | ShaguDPS | 3.0.1 | https://github.com/shagu/ShaguDPS |
 | DoiteAuras | 1.8.7 | https://github.com/Player-Doite/DoiteAuras |
-| Mik's Scrolling Battle Text | 4.43 | by Mik — [mirror](https://github.com/roby-brok/octowow-addon-mirrors) |
+| Mik's Scrolling Battle Text | v4.44-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik, 4.43 maintained by Athene. Stops it silently switching combat logging to disk on (it had written 269 MB), adds a literal-prefix reject to the combat-log parser, and repairs an icon cache that was never read. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified |
 | Aegis: RallyPower | 1.1.0 | https://github.com/Torchlite-bit/Aegis_RallyPower |
 | Aegis: Single Button Rotation | 1.1.4 | https://github.com/Torchlite-bit/Aegis_SBR — already ClassicAPI-native (`C_Spell`, `C_UnitAuras`, `C_Timer`, `C_EncodingUtil`) |
 

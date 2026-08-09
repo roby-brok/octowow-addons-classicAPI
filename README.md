@@ -58,7 +58,7 @@ are not addons — most of what follows depends on them.
 | Addon | Version | Source |
 |---|---|---|
 | pfUI | ClassicAPI | **[my fork](https://github.com/roby-brok/pfui-classicAPI)** of **[brues-code's ClassicAPI Edition](https://github.com/brues-code/pfUI)** — original by [Shagu](https://github.com/shagu/pfUI). His edition is the substantial work; mine adds ~45 fixes on top, listed in its `CHANGES-octo.md` |
-| pfUI [Addon Skinner] | 0.4 | https://github.com/jrc13245/pfUI-addonskinner |
+| pfUI [Addon Skinner] | 0.5 | **[my fork](https://github.com/roby-brok/pfUI-addonskinner)** of [jrc13245's](https://github.com/jrc13245/pfUI-addonskinner) — originals by [dein0s](https://gitlab.com/dein0s_wow_vanilla/pfUI-addonskinner) and [RoadBlock](https://github.com/Road-block/). Adds a skin for Mik's Scrolling Battle Text's options window; upstream invites PRs for new skins, so this should land there eventually |
 | pfUI [Better Totems] | 1.0 | **[my fork](https://github.com/roby-brok/pfUI-bettertotems)** — original by [Bombg](https://github.com/Bombg/pfUI-bettertotems) |
 | AtlasLoot | 3.4.4 | https://github.com/Otari98/AtlasLoot — ⚠️ **use this fork.** "AtlasLoot TW Edition v1.0.2" works but cannot be skinned by pfUI-addonskinner, and fails for none of the obvious reasons |
 | Modern Map Markers [Octo] | 2.4 | https://github.com/paokkerkir/ModernMapMarkers-octo — an OctoWoW fork of [tilare's original](https://github.com/tilare/ModernMapMarkers) |

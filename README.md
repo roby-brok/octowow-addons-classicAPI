@@ -9,12 +9,20 @@ people who wrote these; I just use them and occasionally fix something.
 
 Maintained by **Roby_Brok**.
 
-> ### Status: private / not released
+> ### Status: this list is private; the forks are not
 >
 > This setup depends on **[brues-code](https://github.com/brues-code)'s** work — ClassicAPI itself,
 > plus his ClassicAPI editions of pfUI and pfQuest. I only found the project in August 2026 and
-> ported my fixes onto it. **This list stays private until he's had a chance to look at it**, out of
-> courtesy — it's his project the whole thing rests on.
+> ported my fixes onto it. It is his project that the whole thing rests on.
+>
+> As of 2026-08-10 my pfUI and pfQuest trees are **real GitHub forks** of his repositories rather
+> than standalone copies, so they show as *forked from brues-code/…*, sit in the same network, and
+> can open pull requests against him directly. Forks of public repositories are public, so both are
+> public now. The fixes that belong upstream are being prepared as focused PRs rather than dropped
+> on him as one large branch.
+>
+> **This list stays private** — it describes my particular install, which is not something anyone
+> else should copy wholesale.
 >
 > My **[legacy setup](https://github.com/roby-brok/octowow-addons)** is the public one and does not
 > need ClassicAPI. Nothing there is going away.
@@ -57,7 +65,7 @@ are not addons — most of what follows depends on them.
 
 | Addon | Version | Source |
 |---|---|---|
-| pfUI | ClassicAPI | **[my fork](https://github.com/roby-brok/pfui-classicAPI)** of **[brues-code's ClassicAPI Edition](https://github.com/brues-code/pfUI)** — original by [Shagu](https://github.com/shagu/pfUI). His edition is the substantial work; mine adds ~45 fixes on top, listed in its `CHANGES-octo.md` |
+| pfUI | ClassicAPI | **[my fork](https://github.com/roby-brok/pfui-classicAPI)** of **[brues-code's ClassicAPI Edition](https://github.com/brues-code/pfUI)** — original by [Shagu](https://github.com/shagu/pfUI). His edition is the substantial work; mine adds 50 commits on top — 18 of them fixes to bugs still present upstream, listed in its `CHANGES-octo.md` |
 | pfUI [Addon Skinner] | 0.5 | **[my fork](https://github.com/roby-brok/pfUI-addonskinner)** of [jrc13245's](https://github.com/jrc13245/pfUI-addonskinner) — originals by [dein0s](https://gitlab.com/dein0s_wow_vanilla/pfUI-addonskinner) and [RoadBlock](https://github.com/Road-block/). Adds a skin for Mik's Scrolling Battle Text's options window; upstream invites PRs for new skins, so this should land there eventually |
 | pfUI [Better Totems] | 1.0 | **[my fork](https://github.com/roby-brok/pfUI-bettertotems)** — original by [Bombg](https://github.com/Bombg/pfUI-bettertotems) |
 | AtlasLoot | 3.4.4 | https://github.com/Otari98/AtlasLoot — ⚠️ **use this fork.** "AtlasLoot TW Edition v1.0.2" works but cannot be skinned by pfUI-addonskinner, and fails for none of the obvious reasons |
@@ -72,8 +80,8 @@ are not addons — most of what follows depends on them.
 | Addon | Version | Source |
 |---|---|---|
 | pfQuest | ClassicAPI | **[my fork](https://github.com/roby-brok/pfquest-classicAPI)** of **[brues-code's edition](https://github.com/brues-code/pfQuest)** — original by [Shagu](https://github.com/shagu/pfQuest), continued by [The Kludge Bureau](https://github.com/The-Kludge-Bureau/pfQuest). His edition reads quest IDs from `C_QuestLog` rather than matching quest text, which removes a whole class of lookup failures |
-| pfQuest [Octo DB] | 1.0.3 | **[my pack](https://github.com/roby-brok/pfQuest-octo)** — [The Kludge Bureau's](https://github.com/The-Kludge-Bureau/pfQuest-turtle) TurtleWoW database with [paokkerkir's](https://github.com/paokkerkir/pfQuest-octo) Octo pack folded in. Replaces both — do not install them alongside it. Works unchanged on the ClassicAPI edition |
-| pfExtend | 1.0.6 | **[my fork](https://github.com/roby-brok/pfExtend)** — original by [Cliencer](https://github.com/Cliencer/pfExtend) and TinyStick. ⚠️ While its QuestHelper browser is open it resets pfQuest's tracker and route on every refresh. Not currently installed on my setup for that reason |
+| pfQuest [Octo DB] | 1.0.4 | **[my pack](https://github.com/roby-brok/pfQuest-octo)** — [The Kludge Bureau's](https://github.com/The-Kludge-Bureau/pfQuest-turtle) TurtleWoW database with [paokkerkir's](https://github.com/paokkerkir/pfQuest-octo) Octo pack folded in. Replaces both — do not install them alongside it. Works unchanged on the ClassicAPI edition |
+| pfExtend | 1.0.7 | **[my fork](https://github.com/roby-brok/pfExtend)** — original by [Cliencer](https://github.com/Cliencer/pfExtend) and TinyStick. ⚠️ While its QuestHelper browser is open it resets pfQuest's tracker and route on every refresh. Not currently installed on my setup for that reason |
 | FlightMap | 1.12-1 | by Dhask — [mirror](https://github.com/roby-brok/octowow-addon-mirrors) |
 
 ## Combat

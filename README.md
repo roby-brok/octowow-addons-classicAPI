@@ -7,7 +7,7 @@ This repository is **a list, not a mirror.** No addon code is hosted here — ev
 author's own repository, which is where you should download it from. All credit belongs to the
 people who wrote these; I just use them and occasionally fix something.
 
-Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-10**.*
+Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-11**.*
 
 > ### Status: this list is private; the forks are not
 >

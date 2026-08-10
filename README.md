@@ -7,7 +7,7 @@ This repository is **a list, not a mirror.** No addon code is hosted here — ev
 author's own repository, which is where you should download it from. All credit belongs to the
 people who wrote these; I just use them and occasionally fix something.
 
-Maintained by **Roby_Brok**.
+Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-10**.*
 
 > ### Status: this list is private; the forks are not
 >
@@ -57,7 +57,7 @@ are not addons — most of what follows depends on them.
 | **ClassicAPI** | — | **https://github.com/brues-code/ClassicAPI** — required, everything below assumes it |
 | SuperWoW | 2.2 | https://github.com/balakethelock/SuperWoW |
 | Nampower | 4.6.2 | https://github.com/Emyrk/nampower |
-| UnitXP SP3 | — | https://codeberg.org/konaka/UnitXP_SP3 |
+| UnitXP SP3 | v90 | https://github.com/brues-code/UnitXP_SP3 — his build of [konaka's original](https://codeberg.org/konaka/UnitXP_SP3), adds a background-FPS cap and reworked crit animation |
 
 ---
 
@@ -65,12 +65,10 @@ are not addons — most of what follows depends on them.
 
 | Addon | Version | Source |
 |---|---|---|
-| pfUI | ClassicAPI | **[my fork](https://github.com/roby-brok/pfUI-classicAPI)** of **[brues-code's ClassicAPI Edition](https://github.com/brues-code/pfUI)** — original by [Shagu](https://github.com/shagu/pfUI). His edition is the substantial work; mine adds 50 commits on top — 18 of them fixes to bugs still present upstream, listed in its `CHANGES-octo.md` |
+| pfUI | ClassicAPI | **[my fork](https://github.com/roby-brok/pfUI-classicAPI)** of **[brues-code's ClassicAPI Edition](https://github.com/brues-code/pfUI)** — original by [Shagu](https://github.com/shagu/pfUI). His edition is the substantial work; mine adds preferences and polish on top — nearly all bug fixes found here are **already merged upstream** (PRs #39/#40). What remains is listed briefly in its README and fully in `CHANGES-octo.md` |
 | pfUI [Addon Skinner] | 0.5 | **[my fork](https://github.com/roby-brok/pfUI-addonskinner)** of [jrc13245's](https://github.com/jrc13245/pfUI-addonskinner) — originals by [dein0s](https://gitlab.com/dein0s_wow_vanilla/pfUI-addonskinner) and [RoadBlock](https://github.com/Road-block/). Adds a skin for Mik's Scrolling Battle Text's options window; upstream invites PRs for new skins, so this should land there eventually |
 | pfUI [Better Totems] | 1.0 | **[my fork](https://github.com/roby-brok/pfUI-bettertotems)** — original by [Bombg](https://github.com/Bombg/pfUI-bettertotems) |
 | AtlasLoot | 3.4.4 | https://github.com/Otari98/AtlasLoot — ⚠️ **use this fork.** "AtlasLoot TW Edition v1.0.2" works but cannot be skinned by pfUI-addonskinner, and fails for none of the obvious reasons |
-| Modern Map Markers [Octo] | 2.4 | https://github.com/paokkerkir/ModernMapMarkers-octo — an OctoWoW fork of [tilare's original](https://github.com/tilare/ModernMapMarkers) |
-| LevelRange [Turtle] | 2.2.0 | https://github.com/Spartelfant/LevelRange-Turtle |
 | Atlas-TW (Atlas-CFM) | 1.60 | https://github.com/byCFM2/Atlas-TW |
 | PizzaSlices | 1.5.2 | by Pizzahawaii — [mirror](https://github.com/roby-brok/octowow-addon-mirrors) |
 | Turtle_General / Turtle_GroupUI | — | *bundled with the client* |
@@ -79,43 +77,47 @@ are not addons — most of what follows depends on them.
 
 | Addon | Version | Source |
 |---|---|---|
-| pfQuest | ClassicAPI | **[my fork](https://github.com/roby-brok/pfQuest-classicAPI)** of **[brues-code's edition](https://github.com/brues-code/pfQuest)** — original by [Shagu](https://github.com/shagu/pfQuest), continued by [The Kludge Bureau](https://github.com/The-Kludge-Bureau/pfQuest). His edition reads quest IDs from `C_QuestLog` rather than matching quest text, which removes a whole class of lookup failures |
+| pfQuest | ClassicAPI | **[my fork](https://github.com/roby-brok/pfQuest-classicAPI)** of **[brues-code's edition](https://github.com/brues-code/pfQuest)** — original by [Shagu](https://github.com/shagu/pfQuest), continued by [The Kludge Bureau](https://github.com/The-Kludge-Bureau/pfQuest). His edition reads quest IDs from `C_QuestLog` rather than matching quest text, which removes a whole class of lookup failures. The fork's `[Translate]` repair is offered upstream as [PR #2](https://github.com/brues-code/pfQuest/pull/2) |
 | pfQuest [Octo DB] | 1.0.4 | **[my pack](https://github.com/roby-brok/pfQuest-octo)** — [The Kludge Bureau's](https://github.com/The-Kludge-Bureau/pfQuest-turtle) TurtleWoW database with [paokkerkir's](https://github.com/paokkerkir/pfQuest-octo) Octo pack folded in. Replaces both — do not install them alongside it. Works unchanged on the ClassicAPI edition |
-| pfExtend | 1.0.7 | **[my fork](https://github.com/roby-brok/pfExtend)** — original by [Cliencer](https://github.com/Cliencer/pfExtend) and TinyStick. ⚠️ While its QuestHelper browser is open it resets pfQuest's tracker and route on every refresh. Not currently installed on my setup for that reason |
-| FlightMap | 1.12-1 | by Dhask — [mirror](https://github.com/roby-brok/octowow-addon-mirrors) |
+| pfExtend | 1.0.7 | **[my fork](https://github.com/roby-brok/pfExtend)** — original by [Cliencer](https://github.com/Cliencer/pfExtend) and TinyStick. ⚠️ While its QuestHelper browser is open it resets pfQuest's tracker and route on every refresh — close it when done |
 
 ## Combat
 
 | Addon | Version | Source |
 |---|---|---|
-| BigWigs | 2.0.0 | https://github.com/pepopo978/BigWigs |
 | OWThreat | 1.4.0 | **[my fork](https://github.com/roby-brok/OWThreat)** — original ([TWThreat](https://github.com/MarcelineVQ/TWThreat)) by Xerron/Er. Speaks the same threat API, so it works alongside stock TWThreat users — but do not install both |
-| ShaguDPS | 3.0.1 | https://github.com/shagu/ShaguDPS |
-| DoiteAuras | 1.8.7 | https://github.com/Player-Doite/DoiteAuras |
-| Mik's Scrolling Battle Text | v4.44-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik, 4.43 maintained by Athene. Stops it silently switching combat logging to disk on (it had written 269 MB), adds a literal-prefix reject to the combat-log parser, and repairs an icon cache that was never read. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified |
+| GreedMeter | 1.2.1 | https://github.com/iGreed1993/GreedMeter — damage meter with **GUID attribution** through SuperWoW's raw combat log, the accuracy leap chat-parsing meters can't make. Trialing as the ShaguDPS replacement; a drag-crash workaround and a click guard are carried locally and reported upstream as [issue #1](https://github.com/iGreed1993/GreedMeter/issues/1) |
+| Mik's Scrolling Battle Text | v5.0-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik; now rebased onto **[brues-code's continuation](https://github.com/brues-code/Vanilla_MikScrollingBattleText)** (the living branch of the family), which also drops the Babble-Spell library by resolving names through Nampower. My three fixes ride on top: it no longer silently switches combat logging to disk on (269 MB found), the combat-log parser gets a cheap literal-prefix reject, and the negative icon cache is honoured. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified |
 | Aegis: RallyPower | 1.1.0 | https://github.com/Torchlite-bit/Aegis_RallyPower |
-| Aegis: Single Button Rotation | 1.1.4 | https://github.com/Torchlite-bit/Aegis_SBR — already ClassicAPI-native (`C_Spell`, `C_UnitAuras`, `C_Timer`, `C_EncodingUtil`) |
+| Aegis: Single Button Rotation | 1.1.8 | https://github.com/Torchlite-bit/Aegis_SBR — already ClassicAPI-native (`C_Spell`, `C_UnitAuras`, `C_Timer`, `C_EncodingUtil`) |
 
 ## Macros & API
 
 | Addon | Version | Source |
 |---|---|---|
-| SuperCleveRoidMacros | 2.4 | https://github.com/jrc13245/SuperCleveRoidMacros — **still required.** ClassicAPI gives macros better *inputs* (real unit tokens, spell IDs, focus) but has no conditional parser; `[@mouseover,help]` is entirely CleveRoids' |
+| SuperCleveRoidMacros | 2.4+ | **[brues-code's fork](https://github.com/brues-code/SuperCleveRoidMacros)** of [jrc13245's](https://github.com/jrc13245/SuperCleveRoidMacros) — built to pair with his pfUI (shared cast tracking, no redundant mouseover hooks) and adds `#showtooltip spell:<id>` / `item:<id>`. **Still required:** ClassicAPI gives macros better *inputs* but has no conditional parser; `[@mouseover,help]` is entirely CleveRoids' |
 | SuperAPI | — | https://github.com/balakethelock/SuperAPI |
 | Nampower Settings | — | https://github.com/Dusk-92/NampowerSettings |
-| UnitXP SP3 Addon | — | https://github.com/whtmst/UnitXP_SP3_Addon |
+| UnitXP SP3 Addon | v90 | https://github.com/brues-code/UnitXP_SP3_Addon — paired with his v90 DLL below; degrades with a clear message instead of erroring when the DLL is older |
 
 ## Items, bags & characters
 
 | Addon | Version | Source |
 |---|---|---|
-| aux-addon | — | https://github.com/OldManAlpha/aux-addon |
-| BetterCharacterStats | 1.15.3 | https://github.com/pepopo978/BetterCharacterStats |
+| Aegis: Exchange | 1.8.0 | https://github.com/Torchlite-bit/Aegis_Exchange — auction house helper |
 | StatCompare | 2.0.0 Beta | by slashboy, updated by Provocateur@turtlewow — [mirror](https://github.com/roby-brok/octowow-addon-mirrors) |
-| OctoMail | 1.5.0 | **[my fork](https://github.com/roby-brok/OctoMail)** of [TurtleMail](https://github.com/sica42/TurtleMail) by [shirsig](https://github.com/shirsig) and [sica42](https://github.com/sica42) |
+| Aegis: Courier | 1.0.4 | https://github.com/Torchlite-bit/Aegis_Courier — mailbox companion |
 | PizzaWorldBuffs | 2.0.0 | https://github.com/acid9000/PizzaWorldBuffs |
 
 ---
+
+## Rotated out on 2026-08-10
+
+Removed from the install, so removed from the list — nothing wrong with any of them:
+**ShaguDPS** (GreedMeter trial), **OctoMail** (Aegis: Courier), **aux-addon** (Aegis:
+Exchange), and **BigWigs, BetterCharacterStats, DoiteAuras, FlightMap, LevelRange-Turtle,
+ModernMapMarkers-octo** — out of the ClassicAPI loadout for now; most remain on the
+[legacy list](https://github.com/roby-brok/octowow-addons).
 
 ## Dropped — now native
 

@@ -9,23 +9,20 @@ people who wrote these; I just use them and occasionally fix something.
 
 Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-11**.*
 
-> ### Status: this list is private; the forks are not
+> ### Status
 >
 > This setup depends on **[brues-code](https://github.com/brues-code)'s** work — ClassicAPI itself,
-> plus his ClassicAPI editions of pfUI and pfQuest. I only found the project in August 2026 and
-> ported my fixes onto it. It is his project that the whole thing rests on.
+> plus his ClassicAPI editions of pfUI and pfQuest. I found the project in August 2026, switched my
+> whole install to it, and ported my fixes onto his trees. It is his project that everything here
+> rests on.
 >
-> As of 2026-08-10 my pfUI and pfQuest trees are **real GitHub forks** of his repositories rather
-> than standalone copies, so they show as *forked from brues-code/…*, sit in the same network, and
-> can open pull requests against him directly. Forks of public repositories are public, so both are
-> public now. The fixes that belong upstream are being prepared as focused PRs rather than dropped
-> on him as one large branch.
+> My pfUI and pfQuest trees are **real GitHub forks** of his repositories — they sit in his network
+> and the fixes that belong upstream go to him as focused PRs (two are already merged in pfUI).
 >
-> **This list stays private** — it describes my particular install, which is not something anyone
-> else should copy wholesale.
->
-> My **[legacy setup](https://github.com/roby-brok/octowow-addons)** is the public one and does not
-> need ClassicAPI. Nothing there is going away.
+> This describes **my particular install** — treat it as a reference, not something to copy
+> wholesale. My **[legacy setup](https://github.com/roby-brok/octowow-addons)** does not need
+> ClassicAPI and keeps working the classic way, with shipped data tables. Nothing there is going
+> away.
 
 ---
 

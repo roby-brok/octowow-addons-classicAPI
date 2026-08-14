@@ -56,8 +56,8 @@ For this setup that meant three things:
 Loaded by [VanillaFixes](https://github.com/hexblade/VanillaFixes) and listed in `dlls.txt`. These
 are not addons — most of what follows depends on them.
 
-The launcher ships nampower and UnitXP itself (MODS tab); **SuperWoW and ClassicAPI it does
-not** — add both via *MODS → Your DLL mods → Add DLL*.
+The launcher ships nampower and UnitXP itself (MODS tab); **SuperWoW, ClassicAPI and
+AuctionQueryThrottle it does not** — add those via *MODS → Your DLL mods → Add DLL*.
 
 | Mod | Version | Source |
 |---|---|---|
@@ -65,6 +65,7 @@ not** — add both via *MODS → Your DLL mods → Add DLL*.
 | SuperWoW | 2.2 | https://github.com/balakethelock/SuperWoW |
 | Nampower | 4.6.2 | https://github.com/Emyrk/nampower |
 | UnitXP SP3 | v90 | https://github.com/brues-code/UnitXP_SP3 — his build of [konaka's original](https://codeberg.org/konaka/UnitXP_SP3), adds a background-FPS cap and reworked crit animation |
+| AuctionQueryThrottle | — | https://github.com/brues-code/AuctionQueryThrottle — removes the client's hardcoded 5-second floor between auction-house queries: the next page fires the moment the server answers, so AH browsing runs at round-trip speed. Also user-added via *Add DLL* |
 
 ---
 

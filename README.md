@@ -17,9 +17,11 @@ Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-
 > rests on.
 >
 > **ClassicAPI is not part of the stock Octo client** — the launcher does not install it for you.
-> You add the DLL yourself: grab the release from [brues' repo](https://github.com/brues-code/ClassicAPI),
-> drop it next to `WoW.exe`, and add a `ClassicAPI.dll` line to `dlls.txt` (VanillaFixes loads it).
-> Without that DLL, nothing on this list that says "ClassicAPI" will run.
+> Grab the release from [brues' repo](https://github.com/brues-code/ClassicAPI), then add it via
+> the launcher's *MODS → Your DLL mods → Add DLL* (or drop it next to `WoW.exe` and add a
+> `ClassicAPI.dll` line to `dlls.txt` by hand — same thing). **SuperWoW is added the same way** —
+> the launcher does not ship it either. Without the ClassicAPI DLL, nothing on this list that
+> says "ClassicAPI" will run.
 >
 > My pfUI and pfQuest trees are **real GitHub forks** of his repositories — they sit in his network
 > and the fixes that belong upstream go to him as focused PRs (two are already merged in pfUI).
@@ -53,6 +55,9 @@ For this setup that meant three things:
 
 Loaded by [VanillaFixes](https://github.com/hexblade/VanillaFixes) and listed in `dlls.txt`. These
 are not addons — most of what follows depends on them.
+
+The launcher ships nampower and UnitXP itself (MODS tab); **SuperWoW and ClassicAPI it does
+not** — add both via *MODS → Your DLL mods → Add DLL*.
 
 | Mod | Version | Source |
 |---|---|---|

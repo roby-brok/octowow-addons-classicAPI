@@ -92,9 +92,8 @@ not** — add both via *MODS → Your DLL mods → Add DLL*.
 
 | Addon | Version | Source |
 |---|---|---|
-| OWThreat | 1.4.0 | **[my fork](https://github.com/roby-brok/OWThreat)** — original ([TWThreat](https://github.com/MarcelineVQ/TWThreat)) by Xerron/Er. Speaks the same threat API, so it works alongside stock TWThreat users — but do not install both |
-| GreedMeter | 1.2.5 | https://github.com/iGreed1993/GreedMeter — damage meter with **GUID attribution** through SuperWoW's raw combat log, the accuracy leap chat-parsing meters can't make. Trialing as the ShaguDPS replacement; the early drag-crash was fixed upstream in 1.2.2 after [issue #1](https://github.com/iGreed1993/GreedMeter/issues/1) |
-| Mik's Scrolling Battle Text | v5.0-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik; now rebased onto **[brues-code's continuation](https://github.com/brues-code/Vanilla_MikScrollingBattleText)** (the living branch of the family), which also drops the Babble-Spell library by resolving names through Nampower. My three fixes ride on top: it no longer silently switches combat logging to disk on (269 MB found), the combat-log parser gets a cheap literal-prefix reject, and the negative icon cache is honoured. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified |
+| GreedMeter | 1.2.5 | https://github.com/iGreed1993/GreedMeter — damage **and threat** meter with **GUID attribution** through SuperWoW's raw combat log, the accuracy leap chat-parsing meters can't make. Its threat mode replaced OWThreat in this setup (2026-08-14); the early drag-crash was fixed upstream in 1.2.2 after [issue #1](https://github.com/iGreed1993/GreedMeter/issues/1) |
+| Mik's Scrolling Battle Text | v5.0-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik; now rebased onto **[brues-code's continuation](https://github.com/brues-code/Vanilla_MikScrollingBattleText)** (the living branch of the family), which also drops the Babble-Spell library by resolving names through Nampower. My three fixes ride on top: it no longer silently switches combat logging to disk on (269 MB found), the combat-log parser gets a cheap literal-prefix reject, and the negative icon cache is honoured. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified — that folder ships in [jrc13245/Vanilla_MikScrollingBattleText](https://github.com/jrc13245/Vanilla_MikScrollingBattleText), so you don't have to hunt for it |
 | Aegis: RallyPower | 1.1.0 | https://github.com/Torchlite-bit/Aegis_RallyPower |
 | Aegis: Single Button Rotation | 1.1.8 | https://github.com/Torchlite-bit/Aegis_SBR — already ClassicAPI-native (`C_Spell`, `C_UnitAuras`, `C_Timer`, `C_EncodingUtil`) |
 
@@ -104,7 +103,7 @@ not** — add both via *MODS → Your DLL mods → Add DLL*.
 |---|---|---|
 | SuperCleveRoidMacros | 2.4+ | **[brues-code's fork](https://github.com/brues-code/SuperCleveRoidMacros)** of [jrc13245's](https://github.com/jrc13245/SuperCleveRoidMacros) — built to pair with his pfUI (shared cast tracking, no redundant mouseover hooks) and adds `#showtooltip spell:<id>` / `item:<id>`. **Still required:** ClassicAPI gives macros better *inputs* but has no conditional parser; `[@mouseover,help]` is entirely CleveRoids' |
 | SuperAPI | — | https://github.com/balakethelock/SuperAPI |
-| Nampower Settings | — | https://github.com/Dusk-92/NampowerSettings |
+| Nampower Settings | — | https://github.com/Emyrk/nampowersettings — the companion settings addon from the nampower maintainer |
 | OctoCVars | 0.2.1 | **[my addon](https://github.com/roby-brok/OctoCVars)** — cvar browser for this stack. 1.12 can't enumerate cvars, so it ships a curated list (stock + Nampower `NP_*` + SuperWoW) and probes it at login: only cvars your client actually has are shown. Search, changed-from-default filter, edit with hints, reset. `/cvars` |
 | UnitXP SP3 Addon | v90 | https://github.com/brues-code/UnitXP_SP3_Addon — paired with his v90 DLL below; degrades with a clear message instead of erroring when the DLL is older |
 
@@ -126,6 +125,10 @@ Removed from the install, so removed from the list — nothing wrong with any of
 Exchange), and **BigWigs, BetterCharacterStats, DoiteAuras, FlightMap, LevelRange-Turtle,
 ModernMapMarkers-octo** — out of the ClassicAPI loadout for now; most remain on the
 [legacy list](https://github.com/roby-brok/octowow-addons).
+
+**OWThreat** followed on 2026-08-14 — GreedMeter's threat mode covers it now. The fork
+stays maintained at [roby-brok/OWThreat](https://github.com/roby-brok/OWThreat), speaks
+the same threat API as stock TWThreat, and remains on the legacy list.
 
 ## Dropped — now native
 

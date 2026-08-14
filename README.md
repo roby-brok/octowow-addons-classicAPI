@@ -105,6 +105,7 @@ AuctionQueryThrottle it does not** — add those via *MODS → Your DLL mods →
 | SuperCleveRoidMacros | 2.4+ | **[brues-code's fork](https://github.com/brues-code/SuperCleveRoidMacros)** of [jrc13245's](https://github.com/jrc13245/SuperCleveRoidMacros) — built to pair with his pfUI (shared cast tracking, no redundant mouseover hooks) and adds `#showtooltip spell:<id>` / `item:<id>`. **Still required:** ClassicAPI gives macros better *inputs* but has no conditional parser; `[@mouseover,help]` is entirely CleveRoids' |
 | SuperAPI | — | https://github.com/balakethelock/SuperAPI |
 | Nampower Settings | — | https://github.com/Emyrk/nampowersettings — the companion settings addon from the nampower maintainer |
+| OctoItemMacroIcons | — | https://github.com/brues-code/OctoItemMacroIcons — fills the macro icon picker with every icon the game can supply; the stock picker offers only a small fixed set, which left custom items' icons unpickable. Requires ClassicAPI |
 | OctoCVars | 0.2.1 | **[my addon](https://github.com/roby-brok/OctoCVars)** — cvar browser for this stack. 1.12 can't enumerate cvars, so it ships a curated list (stock + Nampower `NP_*` + SuperWoW) and probes it at login: only cvars your client actually has are shown. Search, changed-from-default filter, edit with hints, reset. `/cvars` |
 | UnitXP SP3 Addon | v90 | https://github.com/brues-code/UnitXP_SP3_Addon — paired with his v90 DLL below; degrades with a clear message instead of erroring when the DLL is older |
 

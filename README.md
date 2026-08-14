@@ -7,7 +7,7 @@ This repository is **a list, not a mirror.** No addon code is hosted here — ev
 author's own repository, which is where you should download it from. All credit belongs to the
 people who wrote these; I just use them and occasionally fix something.
 
-Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-11**.*
+Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-14**.*
 
 > ### Status
 >
@@ -15,6 +15,11 @@ Maintained by **Roby_Brok**. *Last synced against the actual install: **2026-08-
 > plus his ClassicAPI editions of pfUI and pfQuest. I found the project in August 2026, switched my
 > whole install to it, and ported my fixes onto his trees. It is his project that everything here
 > rests on.
+>
+> **ClassicAPI is not part of the stock Octo client** — the launcher does not install it for you.
+> You add the DLL yourself: grab the release from [brues' repo](https://github.com/brues-code/ClassicAPI),
+> drop it next to `WoW.exe`, and add a `ClassicAPI.dll` line to `dlls.txt` (VanillaFixes loads it).
+> Without that DLL, nothing on this list that says "ClassicAPI" will run.
 >
 > My pfUI and pfQuest trees are **real GitHub forks** of his repositories — they sit in his network
 > and the fixes that belong upstream go to him as focused PRs (two are already merged in pfUI).
@@ -75,7 +80,7 @@ are not addons — most of what follows depends on them.
 | Addon | Version | Source |
 |---|---|---|
 | pfQuest | ClassicAPI | **[my fork](https://github.com/roby-brok/pfQuest-classicAPI)** of **[brues-code's edition](https://github.com/brues-code/pfQuest)** — original by [Shagu](https://github.com/shagu/pfQuest), continued by [The Kludge Bureau](https://github.com/The-Kludge-Bureau/pfQuest). His edition reads quest IDs from `C_QuestLog` rather than matching quest text, which removes a whole class of lookup failures. The fork's `[Translate]` repair is offered upstream as [PR #2](https://github.com/brues-code/pfQuest/pull/2) |
-| pfQuest [Octo DB] | 1.0.12 | **[my pack](https://github.com/roby-brok/pfQuest-octo)** — [The Kludge Bureau's](https://github.com/The-Kludge-Bureau/pfQuest-turtle) TurtleWoW database with [paokkerkir's](https://github.com/paokkerkir/pfQuest-octo) Octo pack folded in. Replaces both — do not install them alongside it. Works unchanged on the ClassicAPI edition |
+| pfQuest [Octo DB] | 1.0.13 | **[my pack](https://github.com/roby-brok/pfQuest-octo)** — [The Kludge Bureau's](https://github.com/The-Kludge-Bureau/pfQuest-turtle) TurtleWoW database with [paokkerkir's](https://github.com/paokkerkir/pfQuest-octo) Octo pack folded in. Replaces both — do not install them alongside it. Works unchanged on the ClassicAPI edition |
 | pfExtend | 1.0.8 | **[my fork](https://github.com/roby-brok/pfExtend)** — original by [Cliencer](https://github.com/Cliencer/pfExtend) and TinyStick. ⚠️ While its QuestHelper browser is open it resets pfQuest's tracker and route on every refresh — close it when done |
 
 ## Combat
@@ -83,7 +88,7 @@ are not addons — most of what follows depends on them.
 | Addon | Version | Source |
 |---|---|---|
 | OWThreat | 1.4.0 | **[my fork](https://github.com/roby-brok/OWThreat)** — original ([TWThreat](https://github.com/MarcelineVQ/TWThreat)) by Xerron/Er. Speaks the same threat API, so it works alongside stock TWThreat users — but do not install both |
-| GreedMeter | 1.2.1 | https://github.com/iGreed1993/GreedMeter — damage meter with **GUID attribution** through SuperWoW's raw combat log, the accuracy leap chat-parsing meters can't make. Trialing as the ShaguDPS replacement; a drag-crash workaround and a click guard are carried locally and reported upstream as [issue #1](https://github.com/iGreed1993/GreedMeter/issues/1) |
+| GreedMeter | 1.2.5 | https://github.com/iGreed1993/GreedMeter — damage meter with **GUID attribution** through SuperWoW's raw combat log, the accuracy leap chat-parsing meters can't make. Trialing as the ShaguDPS replacement; the early drag-crash was fixed upstream in 1.2.2 after [issue #1](https://github.com/iGreed1993/GreedMeter/issues/1) |
 | Mik's Scrolling Battle Text | v5.0-octo | **[my fork](https://github.com/roby-brok/MikScrollingBattleText)** — original by Mik; now rebased onto **[brues-code's continuation](https://github.com/brues-code/Vanilla_MikScrollingBattleText)** (the living branch of the family), which also drops the Babble-Spell library by resolving names through Nampower. My three fixes ride on top: it no longer silently switches combat logging to disk on (269 MB found), the combat-log parser gets a cheap literal-prefix reject, and the negative icon cache is honoured. Needs the stock `MikScrollingBattleTextOptions` alongside it, unmodified |
 | Aegis: RallyPower | 1.1.0 | https://github.com/Torchlite-bit/Aegis_RallyPower |
 | Aegis: Single Button Rotation | 1.1.8 | https://github.com/Torchlite-bit/Aegis_SBR — already ClassicAPI-native (`C_Spell`, `C_UnitAuras`, `C_Timer`, `C_EncodingUtil`) |
@@ -138,6 +143,11 @@ pickup-and-drop loop, with an auto-sort-on-open option. Still perfectly fine to 
 unmodified to [octowow-addon-mirrors](https://github.com/roby-brok/octowow-addon-mirrors), which
 makes clear they are not my work and lists each author. If you know the real home for one, open an
 issue and I will link it and delete the copy.
+
+**Installing from a GitHub ZIP:** the green *Code → Download ZIP* button unpacks as
+`Name-main` or `Name-master`. The game (and pfUI's addon integrations) only recognize the
+addon if the folder inside `Interface\AddOns` is named **exactly** the addon's own name
+(`pfUI`, `OWThreat`, …) — rename it after unzipping, or use `git clone` instead.
 
 **The forks** exist only to carry fixes I hit while playing. Each one's README explains what was
 changed and why. Use the originals unless you specifically want those fixes — and if an upstream
